@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import MobileMenu from './MobileMenu'
 
 export default function Header() {
