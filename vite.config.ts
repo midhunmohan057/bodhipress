@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     react(),
-    vike({ prerender: true }), // Enables Static Site Generation
-    tailwindcss(),             // The new Tailwind v4 plugin
+    vike(), // Cleaned up! No settings inside here anymore.
+    tailwindcss(),             
   ]
 })

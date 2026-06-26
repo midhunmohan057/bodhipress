@@ -13,10 +13,10 @@ export default function Page() {
             Bodhi Press Foundation is an independent not-for-profit institution dedicated to publishing, research, education, and public discourse. We create platforms that amplify marginalized voices, advance critical inquiry, and democratize access to knowledge.
           </p>
           <div className="flex gap-4 mb-8">
-            <button className="bg-blue-700 text-white px-8 py-3 rounded font-bold hover:bg-blue-800 transition">
+            <button className="bg-blue-700 text-white px-8 py-3 rounded font-bold hover:bg-blue-800 transition cursor-pointer">
               Explore Our Work
             </button>
-            <button className="border border-blue-700 text-blue-700 px-8 py-3 rounded font-bold hover:bg-blue-50 transition">
+            <button className="border border-blue-700 text-blue-700 px-8 py-3 rounded font-bold hover:bg-blue-50 transition cursor-pointer">
               Support the Foundation
             </button>
           </div>
@@ -58,7 +58,8 @@ export default function Page() {
             <p>
               Our work brings together writers, researchers, educators, artists, journalists, and communities to produce and share knowledge that is relevant, rigorous, and socially meaningful.
             </p>
-            <a href="#" className="text-blue-700 font-bold inline-flex items-center mt-4 hover:underline">
+            {/* Replaced broken '#' with a clean relative path */}
+            <a href="/about" className="text-blue-700 font-bold inline-flex items-center mt-4 hover:underline">
               Read more about us <span className="ml-2">&rarr;</span>
             </a>
           </div>
