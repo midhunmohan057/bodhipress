@@ -1,4 +1,4 @@
-import  { useState } from 'react'
+import { useState } from 'react'
 import MobileMenu from './MobileMenu'
 
 export default function Header() {
@@ -11,9 +11,7 @@ export default function Header() {
           
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-[#1d3557] text-white rounded-full flex items-center justify-center font-bold text-xl group-hover:bg-blue-700 transition">
-              ≡
-            </div>
+           
             <div className="font-serif font-bold text-lg leading-tight uppercase tracking-wide text-gray-900">
               Bodhi Press <br /> Foundation
             </div>
@@ -31,20 +29,14 @@ export default function Header() {
 
           {/* Desktop Actions & Mobile Hamburger Trigger */}
           <div className="flex items-center gap-4">
-            <button className="hidden sm:block bg-blue-700 text-white px-5 py-2.5 rounded font-bold text-sm hover:bg-blue-800 transition">
+            <button className="hidden sm:block bg-blue-700 text-white px-5 py-2.5 rounded font-bold text-sm hover:bg-blue-800 transition cursor-pointer">
               Support Us
-            </button>
-            
-            <button className="text-gray-400 hover:text-gray-900 p-2" aria-label="Search">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-              </svg>
             </button>
 
             {/* Hamburger Button */}
             <button 
               onClick={() => setIsMobileOpen(true)}
-              className="md:hidden text-gray-700 hover:text-gray-900 p-2 focus:outline-none"
+              className="md:hidden text-gray-700 hover:text-gray-900 p-2 focus:outline-none cursor-pointer"
               aria-label="Open Menu"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
