@@ -1,11 +1,16 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 
+interface AnimatedNumberProps {
+  end: number;
+  suffix?: string;
+}
+
 // Reusable component for the scrolling number animation
-const AnimatedNumber = ({ end, suffix = "" }) => {
-  const [count, setCount] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
+const AnimatedNumber: React.FC<AnimatedNumberProps> = ({ end, suffix = "" }) => {
+  const [count, setCount] = useState<number>(0);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -73,7 +78,7 @@ export default function Page() {
           </div>
         </div>
         
-        <div className="aspect-[16/10] md:aspect-auto md:h-[500px] w-full bg-gray-100 rounded-lg overflow-hidden shadow-lg border border-gray-100">
+        <div className="aspect-16/10 md:aspect-auto md:h-125 w-full bg-gray-100 rounded-lg overflow-hidden shadow-lg border border-gray-100">
           <img 
             src="/images/hero-banner.jpg" 
             alt="Bodhi Press Foundation Hero Banner" 
@@ -186,7 +191,7 @@ export default function Page() {
         </div>
 
         {/* Carousel Container */}
-        <div className="flex overflow-x-auto gap-6 snap-x snap-mandatory pb-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div className="flex overflow-x-auto gap-6 snap-x snap-mandatory pb-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none">
           
           {[
             { img: 'issue-1.jpg', title: 'Caste on Campus', issue: 'Issue 01' },
@@ -196,9 +201,9 @@ export default function Page() {
             { img: 'issue-5.jpg', title: 'Remembering Rohith', issue: 'Issue 05' },
             { img: 'issue-6.jpg', title: 'Ambedkar Jayanti: Public Space, Symbolic Rupture, And The Politics Of Citizenship', issue: 'Issue 06' }
           ].map((item, index) => (
-            <div key={index} className="w-[280px] shrink-0 snap-start flex flex-col">
+            <div key={index} className="w-70 shrink-0 snap-start flex flex-col">
               {/* Instagram Aspect Ratio 1080x1035 */}
-              <div className="w-full aspect-[1080/1035] bg-gray-100 rounded shadow-sm mb-4 overflow-hidden border border-gray-200">
+              <div className="w-full aspect-1080/1035 bg-gray-100 rounded shadow-sm mb-4 overflow-hidden border border-gray-200">
                 <img src={`/images/${item.img}`} alt={item.title} className="w-full h-full object-cover" />
               </div>
               <h5 className="font-bold text-gray-900 text-sm leading-tight">{item.title}</h5>
@@ -221,7 +226,7 @@ export default function Page() {
               <h4 className="text-4xl font-bold font-serif mb-1">
                 <AnimatedNumber end={6} suffix="" />
               </h4>
-              <p className="text-sm text-blue-100 max-w-[120px] leading-tight">Thematic Issues Published</p>
+              <p className="text-sm text-blue-100 max-w-30 leading-tight">Thematic Issues Published</p>
             </div>
           </div>
 
@@ -231,7 +236,7 @@ export default function Page() {
               <h4 className="text-4xl font-bold font-serif mb-1">
                 <AnimatedNumber end={50} suffix="+" />
               </h4>
-              <p className="text-sm text-blue-100 max-w-[120px] leading-tight">Contributors & Writers</p>
+              <p className="text-sm text-blue-100 max-w-30 leading-tight">Contributors & Writers</p>
             </div>
           </div>
 
@@ -241,7 +246,7 @@ export default function Page() {
               <h4 className="text-4xl font-bold font-serif mb-1">
                 <AnimatedNumber end={2} suffix="" />
               </h4>
-              <p className="text-sm text-blue-100 max-w-[120px] leading-tight">Podcast Series Released</p>
+              <p className="text-sm text-blue-100 max-w-30 leading-tight">Podcast Series Released</p>
             </div>
           </div>
 
@@ -251,7 +256,7 @@ export default function Page() {
               <h4 className="text-4xl font-bold font-serif mb-1">
                 <AnimatedNumber end={1000} suffix="+" />
               </h4>
-              <p className="text-sm text-blue-100 max-w-[120px] leading-tight">Readers Reached Across India</p>
+              <p className="text-sm text-blue-100 max-w-30 leading-tight">Readers Reached Across India</p>
             </div>
           </div>
 
