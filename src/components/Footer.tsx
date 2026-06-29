@@ -14,25 +14,7 @@ export default function Footer() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-sm text-gray-400 w-full lg:w-auto">
             <div className="flex flex-col space-y-3">
-              <span className="text-white font-semibold tracking-wider uppercase text-xs mb-1">Explore</span>
-              <a href="#" className="hover:text-white transition">About Us</a>
-              <a href="#" className="hover:text-white transition">Initiatives</a>
-              <a href="#" className="hover:text-white transition">Publications</a>
-              <a href="#" className="hover:text-white transition">Research</a>
-            </div>
-            <div className="flex flex-col space-y-3">
-              <span className="text-white font-semibold tracking-wider uppercase text-xs mb-1">Media</span>
-              <a href="#" className="hover:text-white transition">Podcasts</a>
-              <a href="#" className="hover:text-white transition">Events</a>
-              <a href="#" className="hover:text-white transition">News & Updates</a>
-            </div>
-            <div className="flex flex-col space-y-3">
-              <span className="text-white font-semibold tracking-wider uppercase text-xs mb-1">Get Involved</span>
-              <a href="#" className="hover:text-white transition">Donate</a>
-              <a href="#" className="hover:text-white transition">Membership</a>
-              <a href="#" className="hover:text-white transition">Volunteer</a>
-            </div>
-            <div className="flex flex-col space-y-3">
+             
               <span className="text-white font-semibold tracking-wider uppercase text-xs mb-1">Contact</span>
               <span>info@bodhipress.org</span>
               <span>Nagpur, India</span>

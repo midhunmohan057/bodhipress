@@ -19,12 +19,8 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 text-sm font-semibold text-gray-700">
-            <a href="#" className="hover:text-blue-700 transition">About Us</a>
-            <a href="#" className="hover:text-blue-700 transition">Initiatives</a>
-            <a href="#" className="hover:text-blue-700 transition">Publications</a>
-            <a href="#" className="hover:text-blue-700 transition">Research</a>
-            <a href="#" className="hover:text-blue-700 transition">Media</a>
-            <a href="#" className="hover:text-blue-700 transition">Get Involved</a>
+            <a href="#" className="hover:text-blue-700 transition">Team</a>
+            <a href="#" className="hover:text-blue-700 transition">TAC Media School</a>
           </nav>
 
           {/* Desktop Actions & Mobile Hamburger Trigger */}
