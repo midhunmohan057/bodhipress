@@ -57,8 +57,11 @@ export default function Page() {
             Reclaiming Knowledge. <br/>
             <span className="text-blue-700">Building New Publics.</span>
           </h1>
+          <p className="text-base sm:text-lg text-gray-600 mb-4 leading-relaxed">
+            Bodhi Press Foundation is an independent not-for-profit institution dedicated to publishing, research, education, and public discourse. We create platforms that expand access to knowledge, amplify marginalized voices, and encourage critical inquiry rooted in equality, justice, and human dignity.
+          </p>
           <p className="text-base sm:text-lg text-gray-600 mb-8 md:mb-10 leading-relaxed">
-            Bodhi Press Foundation is an independent not-for-profit institution dedicated to publishing, research, education, and public discourse. We create platforms that amplify marginalized voices, advance critical inquiry, and democratize access to knowledge.
+            Through publications, research initiatives, educational programs, and digital platforms, we seek to foster informed dialogue and contribute to a more democratic and inclusive knowledge ecosystem.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3.5 mb-8">
@@ -110,10 +113,10 @@ export default function Page() {
               Knowledge shapes societies, yet access to its production and dissemination remains unequal.
             </p>
             <p>
-              Bodhi Press Foundation creates platforms for publishing, research, education, and public engagement that nurture democratic dialogue and intellectual freedom.
+              Bodhi Press Foundation was established to create accessible platforms for scholarship, publishing, learning, and public engagement. Our work brings together writers, researchers, educators, artists, journalists, and communities to produce and share knowledge that is relevant, rigorous, and socially meaningful.
             </p>
             <p>
-              Our work brings together writers, researchers, educators, artists, journalists, and communities to produce and share knowledge that is relevant, rigorous, and socially meaningful.
+              We believe that ideas have the power to transform society, and that knowledge must be accessible to all.
             </p>
             <a href="https://theambedkarianchronicle.in/team" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-bold inline-flex items-center mt-2 hover:underline">
               Read more about us <span className="ml-2">&rarr;</span>
@@ -124,28 +127,28 @@ export default function Page() {
 
       {/* WHAT WE DO SECTION */}
       <section className="py-16 md:py-24 px-6 max-w-7xl mx-auto text-center border-b border-gray-200">
-        <h3 className="text-blue-700 font-bold uppercase tracking-widest text-xs sm:text-sm mb-12 md:mb-16">What We Do</h3>
+        <h3 className="text-blue-700 font-bold uppercase tracking-widest text-xs sm:text-sm mb-12 md:mb-16">Our Work</h3>
         
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12">
           <div className="flex flex-col items-center px-4 sm:px-0">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-50 text-blue-700 rounded-full flex items-center justify-center text-2xl mb-5">📖</div>
             <h4 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-gray-900">Publishing</h4>
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">Books, journals, essays, reports and digital publications.</p>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">Books, journals, essays, reports, and digital publications that contribute to public understanding and intellectual exchange.</p>
           </div>
           <div className="flex flex-col items-center px-4 sm:px-0">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-50 text-blue-700 rounded-full flex items-center justify-center text-2xl mb-5">🔍</div>
             <h4 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-gray-900">Research</h4>
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">Research and documentation projects across social, cultural and contemporary issues.</p>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">Research and documentation projects that advance critical inquiry across social, cultural, historical, and contemporary issues.</p>
           </div>
           <div className="flex flex-col items-center px-4 sm:px-0">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-50 text-blue-700 rounded-full flex items-center justify-center text-2xl mb-5">🎓</div>
             <h4 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-gray-900">Education</h4>
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">Workshops, training programs, mentorship initiatives and learning opportunities.</p>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">Workshops, training programs, mentorship initiatives, and learning opportunities that strengthen skills in writing, research, media, and public engagement.</p>
           </div>
           <div className="flex flex-col items-center px-4 sm:px-0">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-50 text-blue-700 rounded-full flex items-center justify-center text-2xl mb-5">👥</div>
-            <h4 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-gray-900">Public Dialogue</h4>
-            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">Events, conversations and intellectual exchange on critical public issues.</p>
+            <h4 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-gray-900">Public Discourse</h4>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">Creating spaces for dialogue, reflection, and debate through events, conversations, publications, and digital platforms.</p>
           </div>
         </div>
       </section>
@@ -158,12 +161,13 @@ export default function Page() {
           {/* Initiative 1 */}
           <div className="flex flex-col xl:flex-row bg-white border border-gray-100 shadow-sm rounded-lg overflow-hidden">
             <div className="xl:w-2/5 aspect-[4/5] bg-gray-100 shrink-0">
-              <img src="/images/initiative-chronicle.jpg" alt="The Ambedkarian Chronicle" className="w-full h-full object-cover" />
+              {/* Changed to object-contain and added padding to resolve cropping */}
+              <img src="/images/initiative-chronicle.jpg" alt="The Ambedkarian Chronicle" className="w-full h-full object-contain p-4 xl:p-8 bg-white" />
             </div>
             <div className="p-8 flex flex-col justify-center">
               <h4 className="text-2xl font-serif font-bold text-gray-900 mb-4">The Ambedkarian Chronicle</h4>
               <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                An independent journal of contemporary Ambedkarite thought. Publishing critical essays, literature, reportage, interviews, podcasts, and cultural commentary.
+                The Ambedkarian Chronicle is an independent journal of contemporary Ambedkarite thought dedicated to publishing critical essays, literature, interviews, reportage, podcasts, and cultural commentary. Inspired by the legacy of Dr. B.R. Ambedkar, it serves as a platform for rigorous public discourse and the amplification of marginalized voices.
               </p>
               <a href="https://theambedkarianchronicle.in" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-bold inline-flex items-center hover:underline mt-auto">
                 Visit TAC <span className="ml-2">&rarr;</span>
@@ -174,12 +178,13 @@ export default function Page() {
           {/* Initiative 2 */}
           <div className="flex flex-col xl:flex-row bg-white border border-gray-100 shadow-sm rounded-lg overflow-hidden">
             <div className="xl:w-2/5 aspect-[4/5] bg-gray-100 shrink-0">
-              <img src="/images/initiative-media-school.jpg" alt="TAC School of Media" className="w-full h-full object-cover" />
+              {/* Changed to object-contain and added padding to resolve cropping */}
+              <img src="/images/initiative-media-school.jpg" alt="TAC School of Media" className="w-full h-full object-contain p-4 xl:p-8 bg-white" />
             </div>
             <div className="p-8 flex flex-col justify-center">
               <h4 className="text-2xl font-serif font-bold text-gray-900 mb-4">TAC School of Media</h4>
               <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                Training the next generation of writers, journalists, researchers, and storytellers. Workshops, fellowships and community-based learning for ethical and independent media practices.
+                The TAC School of Media is a media education initiative that nurtures emerging writers, journalists, researchers, and storytellers through workshops, training programs, fellowships, and community-based learning opportunities. The initiative seeks to strengthen independent and socially conscious media practices.
               </p>
               <a href="https://theambedkarianchronicle.in" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-bold inline-flex items-center hover:underline mt-auto">
                 Learn More <span className="ml-2">&rarr;</span>
@@ -282,7 +287,8 @@ export default function Page() {
 
       {/* OUR TEAM SECTION */}
       <section className="py-20 px-6 max-w-5xl mx-auto text-center">
-        <h3 className="text-blue-700 font-bold uppercase tracking-widest text-xs sm:text-sm mb-12">Our Team</h3>
+        <h3 className="text-blue-700 font-bold uppercase tracking-widest text-xs sm:text-sm mb-2">Our Team</h3>
+        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">Meet the people behind Bodhi Press Foundation</p>
         
         <div className="grid md:grid-cols-2 gap-8 text-center mb-10">
           
@@ -295,7 +301,7 @@ export default function Page() {
               <h4 className="font-bold text-xl text-gray-900 mb-1">Dr. Rahul Sonpimple</h4>
               <p className="text-blue-700 text-sm font-semibold mb-3">Director</p>
               <p className="text-gray-600 text-sm leading-relaxed max-w-sm mx-auto">
-                Researcher, educator and social thinker working at the intersection of caste, democracy and constitutional values. Founding President of A/SCA and Director, Savitribai Phule Resource Centre, Nagpur.
+                Dr. Rahul Sonpimple is a researcher, educator, and social thinker whose work engages with questions of caste, democracy, social justice, and constitutional values. He is the Founding President of the All India Independent Scheduled Castes Association (AIISCA) and Director of the Savitribai Phule Resource Centre, Nagpur. His work bridges scholarship, public engagement, and grassroots social transformation.
               </p>
             </div>
           </div>
@@ -309,7 +315,7 @@ export default function Page() {
               <h4 className="font-bold text-xl text-gray-900 mb-1">Suraj Nirmale</h4>
               <p className="text-blue-700 text-sm font-semibold mb-3">Director</p>
               <p className="text-gray-600 text-sm leading-relaxed max-w-sm mx-auto">
-                Visual artist, documentary filmmaker and media practitioner focused on the intersections of caste, culture and memory. Works at the crossroads of creativity, knowledge and public engagement.
+                Suraj Nirmale is a visual artist, documentary filmmaker, and media practitioner. His work explores the intersections of caste, culture, memory, and visual storytelling. Drawing from experience in both the development sector and media, he works to create accessible knowledge and public engagement through creative communication.
               </p>
             </div>
           </div>
@@ -323,24 +329,28 @@ export default function Page() {
 
       {/* FOOTER CTA SECTION */}
       <section className="bg-gray-50 py-16 px-6 border-t border-gray-200">
-        <div className="max-w-5xl mx-auto bg-white border border-gray-200 shadow-sm rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div className="max-w-5xl mx-auto bg-white border border-gray-200 shadow-sm rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 relative overflow-hidden">
           
-          <div className="w-32 md:w-48 shrink-0">
+          <div className="w-32 md:w-48 shrink-0 relative z-10">
             <img src="/images/cta-books.png" alt="Stack of books" className="w-full object-contain" />
           </div>
           
-          <div className="flex-1 text-center md:text-left">
+          <div className="flex-1 text-center md:text-left relative z-10">
             <h3 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-4">
-              Help Build Independent Knowledge Institutions
+              Independent knowledge institutions thrive through collective support.
             </h3>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              Your support enables us to publish new voices, support research, create educational resources, train emerging writers and journalists, and sustain spaces for critical public discourse.
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
+              Your contribution helps us publish new voices, support research, create educational resources, train emerging writers and journalists, and sustain spaces for critical public discourse. Together, we can build a more democratic and inclusive knowledge ecosystem.
+            </p>
+            
+            <p className="text-blue-700 font-bold tracking-widest uppercase text-xs sm:text-sm">
+              Publish. Research. Educate. Engage.
             </p>
           </div>
           
-          <div className="shrink-0 w-full md:w-auto">
-            <button className="w-full md:w-auto bg-blue-700 text-white px-8 py-3.5 rounded font-bold hover:bg-blue-800 transition cursor-pointer text-center shadow-xs">
-              Donate Now
+          <div className="shrink-0 w-full md:w-auto relative z-10 mt-4 md:mt-0 flex items-center">
+            <button className="w-full md:w-auto bg-blue-700 text-white px-8 py-4 rounded font-bold hover:bg-blue-800 transition cursor-pointer text-center shadow-xs">
+              Support Bodhi Press Foundation
             </button>
           </div>
           
