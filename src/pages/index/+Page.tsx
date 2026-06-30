@@ -62,12 +62,20 @@ export default function Page() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3.5 mb-8">
-            <button className="w-full sm:w-auto bg-blue-700 text-white px-8 py-3.5 rounded font-bold hover:bg-blue-800 transition cursor-pointer text-center shadow-xs">
+            <a 
+              href="https://theambedkarianchronicle.in/" 
+              target="_blank" rel="noopener noreferrer"
+              className="w-full sm:w-auto bg-blue-700 text-white px-8 py-3.5 rounded font-bold hover:bg-blue-800 transition cursor-pointer text-center shadow-xs block"
+            >
               Explore Our Work
-            </button>
-            <button className="w-full sm:w-auto border border-blue-700 text-blue-700 px-8 py-3.5 rounded font-bold hover:bg-blue-50 transition cursor-pointer text-center">
+            </a>
+            <a 
+              href="https://theambedkarianchronicle.in/subscribe" 
+              target="_blank" rel="noopener noreferrer"
+              className="w-full sm:w-auto border border-blue-700 text-blue-700 px-8 py-3.5 rounded font-bold hover:bg-blue-50 transition cursor-pointer text-center block"
+            >
               Support the Foundation
-            </button>
+            </a>
           </div>
 
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs sm:text-sm font-bold text-gray-500">
@@ -78,7 +86,7 @@ export default function Page() {
           </div>
         </div>
         
-        <div className="aspect-16/10 md:aspect-auto md:h-125 w-full bg-gray-100 rounded-lg overflow-hidden shadow-lg border border-gray-100">
+        <div className="aspect-[4/5] w-full bg-gray-100 rounded-lg overflow-hidden shadow-lg border border-gray-100 max-w-md mx-auto md:max-w-full">
           <img 
             src="/images/hero-banner.jpg" 
             alt="Bodhi Press Foundation Hero Banner" 
@@ -107,7 +115,7 @@ export default function Page() {
             <p>
               Our work brings together writers, researchers, educators, artists, journalists, and communities to produce and share knowledge that is relevant, rigorous, and socially meaningful.
             </p>
-            <a href="/about" className="text-blue-700 font-bold inline-flex items-center mt-2 hover:underline">
+            <a href="https://theambedkarianchronicle.in/team" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-bold inline-flex items-center mt-2 hover:underline">
               Read more about us <span className="ml-2">&rarr;</span>
             </a>
           </div>
@@ -149,7 +157,7 @@ export default function Page() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Initiative 1 */}
           <div className="flex flex-col xl:flex-row bg-white border border-gray-100 shadow-sm rounded-lg overflow-hidden">
-            <div className="xl:w-2/5 h-64 xl:h-auto bg-gray-100 shrink-0">
+            <div className="xl:w-2/5 aspect-[4/5] bg-gray-100 shrink-0">
               <img src="/images/initiative-chronicle.jpg" alt="The Ambedkarian Chronicle" className="w-full h-full object-cover" />
             </div>
             <div className="p-8 flex flex-col justify-center">
@@ -157,7 +165,7 @@ export default function Page() {
               <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                 An independent journal of contemporary Ambedkarite thought. Publishing critical essays, literature, reportage, interviews, podcasts, and cultural commentary.
               </p>
-              <a href="#" className="text-blue-700 font-bold inline-flex items-center hover:underline mt-auto">
+              <a href="https://theambedkarianchronicle.in" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-bold inline-flex items-center hover:underline mt-auto">
                 Visit TAC <span className="ml-2">&rarr;</span>
               </a>
             </div>
@@ -165,7 +173,7 @@ export default function Page() {
 
           {/* Initiative 2 */}
           <div className="flex flex-col xl:flex-row bg-white border border-gray-100 shadow-sm rounded-lg overflow-hidden">
-            <div className="xl:w-2/5 h-64 xl:h-auto bg-gray-100 shrink-0">
+            <div className="xl:w-2/5 aspect-[4/5] bg-gray-100 shrink-0">
               <img src="/images/initiative-media-school.jpg" alt="TAC School of Media" className="w-full h-full object-cover" />
             </div>
             <div className="p-8 flex flex-col justify-center">
@@ -173,7 +181,7 @@ export default function Page() {
               <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                 Training the next generation of writers, journalists, researchers, and storytellers. Workshops, fellowships and community-based learning for ethical and independent media practices.
               </p>
-              <a href="#" className="text-blue-700 font-bold inline-flex items-center hover:underline mt-auto">
+              <a href="https://theambedkarianchronicle.in" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-bold inline-flex items-center hover:underline mt-auto">
                 Learn More <span className="ml-2">&rarr;</span>
               </a>
             </div>
@@ -185,7 +193,7 @@ export default function Page() {
       <section className="py-10 px-6 max-w-7xl mx-auto">
         <div className="flex justify-between items-end mb-8">
           <h3 className="text-blue-700 font-bold uppercase tracking-widest text-xs sm:text-sm">Featured TAC Issues</h3>
-          <a href="#" className="text-blue-700 font-bold text-sm hover:underline flex items-center">
+          <a href="https://theambedkarianchronicle.in" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-bold text-sm hover:underline flex items-center">
             View all issues <span className="ml-1">&rarr;</span>
           </a>
         </div>
@@ -194,21 +202,30 @@ export default function Page() {
         <div className="flex overflow-x-auto gap-6 snap-x snap-mandatory pb-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none">
           
           {[
-            { img: 'issue-1.jpg', title: 'Caste on Campus', issue: 'Issue 01' },
-            { img: 'issue-2.jpg', title: 'Caste in the Temple', issue: 'Issue 02' },
-            { img: 'issue-3.jpg', title: 'Caste and Climate Change', issue: 'Issue 03' },
-            { img: 'issue-4.jpg', title: 'Caste and Cinema', issue: 'Issue 04' },
-            { img: 'issue-5.jpg', title: 'Remembering Rohith', issue: 'Issue 05' },
-            { img: 'issue-6.jpg', title: 'Ambedkar Jayanti: Public Space, Symbolic Rupture, And The Politics Of Citizenship', issue: 'Issue 06' }
+            { img: 'issue-1.jpg', title: 'Caste on Campus', issue: 'Issue 01', link: 'https://theambedkarianchronicle.in/caste-on-campus' },
+            { img: 'issue-2.jpg', title: 'Caste in the Temple', issue: 'Issue 02', link: 'https://theambedkarianchronicle.in/caste-in-temple' },
+            { img: 'issue-3.jpg', title: 'Caste and Climate Change', issue: 'Issue 03', link: 'https://theambedkarianchronicle.in/caste-and-climate-change' },
+            { img: 'issue-4.jpg', title: 'Caste and Cinema', issue: 'Issue 04', link: 'https://theambedkarianchronicle.in/caste-and-cinema' },
+            { img: 'issue-5.jpg', title: 'Remembering Rohith', issue: 'Issue 05', link: 'https://theambedkarianchronicle.in/remembering-rohith' },
+            { img: 'issue-6.jpg', title: 'Ambedkar Jayanti: Public Space, Symbolic Rupture, And The Politics Of Citizenship', issue: 'Issue 06', link: 'https://theambedkarianchronicle.in/ambedkar-jayanti' }
           ].map((item, index) => (
-            <div key={index} className="w-70 shrink-0 snap-start flex flex-col">
-              {/* Instagram Aspect Ratio 1080x1035 */}
-              <div className="w-full aspect-1080/1035 bg-gray-100 rounded shadow-sm mb-4 overflow-hidden border border-gray-200">
-                <img src={`/images/${item.img}`} alt={item.title} className="w-full h-full object-cover" />
+            <a 
+              href={item.link} 
+              key={index} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-70 shrink-0 snap-start flex flex-col group cursor-pointer"
+            >
+              <div className="w-full aspect-[4/5] bg-gray-100 rounded shadow-sm mb-4 overflow-hidden border border-gray-200">
+                <img 
+                  src={`/images/${item.img}`} 
+                  alt={item.title} 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                />
               </div>
-              <h5 className="font-bold text-gray-900 text-sm leading-tight">{item.title}</h5>
+              <h5 className="font-bold text-gray-900 text-sm leading-tight group-hover:text-blue-700 transition-colors">{item.title}</h5>
               <p className="text-gray-500 text-xs mt-1">{item.issue}</p>
-            </div>
+            </a>
           ))}
 
         </div>
@@ -267,31 +284,31 @@ export default function Page() {
       <section className="py-20 px-6 max-w-5xl mx-auto text-center">
         <h3 className="text-blue-700 font-bold uppercase tracking-widest text-xs sm:text-sm mb-12">Our Team</h3>
         
-        <div className="grid md:grid-cols-2 gap-8 text-left mb-10">
+        <div className="grid md:grid-cols-2 gap-8 text-center mb-10">
           
           {/* Rahul's Card */}
-          <div className="bg-white border border-gray-100 shadow-sm rounded-lg p-6 flex flex-col sm:flex-row gap-6">
-            <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-full overflow-hidden bg-gray-100">
+          <div className="bg-white border border-gray-100 shadow-sm rounded-lg p-8 flex flex-col items-center gap-5">
+            <div className="w-48 sm:w-56 shrink-0 rounded-lg overflow-hidden bg-gray-100 aspect-[4/5]">
               <img src="/images/team-rahul.jpg" alt="Dr. Rahul Sonpimple" className="w-full h-full object-cover" />
             </div>
             <div>
-              <h4 className="font-bold text-lg text-gray-900">Dr. Rahul Sonpimple</h4>
+              <h4 className="font-bold text-xl text-gray-900 mb-1">Dr. Rahul Sonpimple</h4>
               <p className="text-blue-700 text-sm font-semibold mb-3">Director</p>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed max-w-sm mx-auto">
                 Researcher, educator and social thinker working at the intersection of caste, democracy and constitutional values. Founding President of A/SCA and Director, Savitribai Phule Resource Centre, Nagpur.
               </p>
             </div>
           </div>
 
           {/* Suraj's Card */}
-          <div className="bg-white border border-gray-100 shadow-sm rounded-lg p-6 flex flex-col sm:flex-row gap-6">
-            <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-full overflow-hidden bg-gray-100">
+          <div className="bg-white border border-gray-100 shadow-sm rounded-lg p-8 flex flex-col items-center gap-5">
+            <div className="w-48 sm:w-56 shrink-0 rounded-lg overflow-hidden bg-gray-100 aspect-[4/5]">
               <img src="/images/team-suraj.jpg" alt="Suraj Nirmale" className="w-full h-full object-cover" />
             </div>
             <div>
-              <h4 className="font-bold text-lg text-gray-900">Suraj Nirmale</h4>
+              <h4 className="font-bold text-xl text-gray-900 mb-1">Suraj Nirmale</h4>
               <p className="text-blue-700 text-sm font-semibold mb-3">Director</p>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed max-w-sm mx-auto">
                 Visual artist, documentary filmmaker and media practitioner focused on the intersections of caste, culture and memory. Works at the crossroads of creativity, knowledge and public engagement.
               </p>
             </div>
@@ -299,7 +316,7 @@ export default function Page() {
 
         </div>
         
-        <a href="#" className="text-blue-700 font-bold inline-flex items-center hover:underline">
+        <a href="https://theambedkarianchronicle.in/team" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-bold inline-flex items-center hover:underline">
           View full team <span className="ml-2">&rarr;</span>
         </a>
       </section>
