@@ -276,7 +276,7 @@ export default function Page() {
             <div className="text-3xl text-blue-300">📚</div>
             <div className="text-left">
               <h4 className="text-4xl font-bold font-serif mb-1">
-                <AnimatedNumber end={1000} suffix="+" />
+                <AnimatedNumber end={10000} suffix="+" />
               </h4>
               <p className="text-sm text-blue-100 max-w-30 leading-tight">Readers Reached Across India</p>
             </div>

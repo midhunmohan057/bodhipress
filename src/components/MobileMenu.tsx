@@ -29,12 +29,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           </div>
 
           <nav className="flex flex-col space-y-6 mt-8 text-lg font-semibold text-gray-800">
-            <a href="#" onClick={onClose} className="hover:text-blue-700 transition">About Us</a>
-            <a href="#" onClick={onClose} className="hover:text-blue-700 transition">Initiatives</a>
-            <a href="#" onClick={onClose} className="hover:text-blue-700 transition">Publications</a>
-            <a href="#" onClick={onClose} className="hover:text-blue-700 transition">Research</a>
-            <a href="#" onClick={onClose} className="hover:text-blue-700 transition">Media</a>
-            <a href="#" onClick={onClose} className="hover:text-blue-700 transition">Get Involved</a>
+            
+            <a href="https://theambedkarianchronicle.in/subscribe" onClick={onClose} className="hover:text-blue-700 transition">support us</a>
           </nav>
         </div>
 
